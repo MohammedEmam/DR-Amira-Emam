@@ -6,3 +6,18 @@
 .fs-12 {
     font-size: 14px;
 }
+
+
+
+@media (max-width: 767.98px) { 
+    .aboutsection{
+        padding: 0px;
+    }
+    .about-border{
+        margin: 0px;
+    }
+ }
+
+@media (max-width: 575.98px) {
+
+ }
