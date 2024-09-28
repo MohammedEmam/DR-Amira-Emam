@@ -1,0 +1,32 @@
+<section class="my-5 container-fluid">
+  <h2 class="text-center py-3">آراء المرضي</h2>
+  <div class="row  ">
+    <owl-carousel-o class="" [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of alldata" class="col-lg-6 col-md-6 col-sm-6 text-center p-2 ">
+        <div class="item p-3 ">
+          <p>{{item.data}}</p>
+          <div class="d-flex align-items-center justify-content-center">
+            <img class="w-25" src="/assets/images/userImage.png" alt="">
+            <div>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <h6>{{item.name}}</h6>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+    <!-- <div *ngFor="let item of alldata" class="col-lg-6 col-md-6 col-sm-6 text-center p-2 ">
+      <div class="item p-3 ">
+        <p>{{item.data}}</p>
+        <div class="d-flex align-items-center justify-content-center">
+          <img class="w-25" src="/assets/images/userImage.png" alt="">
+          <div>
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <h6>{{item.name}}</h6>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>

@@ -1,0 +1,22 @@
+<section class="container-fluid">
+  <h2 class="text-center my-2">خدماتنا</h2>
+  <div class="row d-flex align-items-center justify-content-center">
+    <div *ngFor="let item of data let i=index" class="col-lg-3 col-md-4 col-sm-6 p-2  services-hover">
+      <div class="item p-2 bg-white ">
+        <div class="divimgheight">
+          <img height="250" class=" w-100 object-fit-contain imgheight" [src]="item.image" alt="">
+        </div>
+        <h6>{{item.title}}</h6>
+        <p *ngFor="let les of item.less">{{les}}</p>
+        <button *ngIf="!item.isshow" (click)="isShow(i)" type="button" class="btn bgc text-white">المزيد</button>
+
+
+        <p *ngIf="item.isshow">{{item.all}}</p>
+        <button *ngIf="item.isshow" (click)="isShow(i)" type="button" class="btn bgc text-white">الأقل</button>
+      </div>
+    </div>
+
+
+  </div>
+
+</section>

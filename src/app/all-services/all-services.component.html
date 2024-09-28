@@ -1,0 +1,9 @@
+<h2 class="text-center ">التخصصات التي يتم علاجها بالمركز</h2>
+<section class="container-fluid">
+  <div class="row">
+    <div *ngFor="let item of data" class="col-md-6 d-flex align-items-center p-2">
+      <i class="fa-solid fa-circle-left c"></i>
+      <p class="m-0 pe-3 ">{{item.name}}</p>
+    </div>
+  </div>
+</section>

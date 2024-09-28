@@ -1,0 +1,56 @@
+<section class="">
+  <div class="m-5">
+    <div class="row py-3">
+      <div class="col-md-6 d-flex align-items-center ">
+        <div class=" mainbgi">
+          <div class=" ">
+            <img class="w-100" src="/assets/images/Home.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 py-3 py-md-3 py-sm-3 ">
+        <h2>د. أميره إمام</h2>
+        <p class="fs-12"> تخرجت من كلية العلاج الطبيعي في مصر بتقدير إمتياز مع مرتبة الشرف.</p>
+        <p class="fs-12">استشاري العلاج الطبيعي جامعة القاهرة</p>
+        <p class="fs-12"> كما أنها حاصله على البورد الأمريكي في العلاج الطبيعي</p>
+        <p class="fs-12"> استشاري العلاج الطبيعي اخصائي التغذيه العلاجيه</p>
+        <p class="fs-12"> دكتوراه العلاج الطبيعي الإكلينيكية من أمريكا</p>
+
+        <div class="row  d-flex align-items-center justify-content-between">
+          <div class="col-6  text-center ">
+            <!-- <div class=" bg-body-secondary py-2 rounded-2">
+                            <h5 class="fs-12 p-0 m-0">احجز الان</h5>
+                        </div> -->
+          </div>
+          <div class="col-4 text-center ">
+            <button (click)="openWhatsApp()" class="me-auto btn btn-hover bgc text-white">إحجز الان</button>
+
+            <!-- <button class="btn bg-body-secondary py-2 rounded-5" (click)="openWhatsApp()">
+              <h5 class="fs-12 p-0 m-0"></h5>
+              احجز الان
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class=" carousel object-fit-cover my-3">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><img src="/assets/images/جهاز 1.jpg" alt=""></ng-template>
+    <ng-template carouselSlide><img src="/assets/images/2.jpg" alt=""></ng-template>
+    <ng-template carouselSlide><img src="/assets/images/3.png" alt=""></ng-template>
+    <ng-template carouselSlide><img src="/assets/images/4.jpg" alt=""></ng-template>
+    <ng-template carouselSlide><img src="/assets/images/5.jpg" alt=""></ng-template>
+  </owl-carousel-o>
+</div>
+
+
+<app-services></app-services>
+<app-about></app-about>
+<app-contact></app-contact>
+<app-blogs></app-blogs>
+<app-all-services></app-all-services>
+<app-testimonials></app-testimonials>
