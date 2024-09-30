@@ -112,3 +112,9 @@ li:hover , a:hover{
   background-color: var(--about-background-color);
 }
 
+    
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
